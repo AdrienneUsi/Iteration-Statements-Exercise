@@ -51,24 +51,25 @@
         //Write a method to check whether a given number is positive or negative
         public static void IsPositive(int num)
         {
-            if(num >0)
+            if (num > 0)
             {
                 Console.WriteLine($"{num} is positive!");
-                else
-                {
-                    Console.WriteLine($"{num} is negative ");
-                }
             }
+            else
+            {
+                Console.WriteLine($"{num} is negative ");
+            }
+            
         }
         
         //Write a method to read the age of a candidate and determine whether they can vote.
         //Hint: Use Parse or the safer TryParse() for an extra challenge
         //Parse()
         //TryParse()
-        public static bool CanVote()
+        public static void CanVote()
         {
             Console.WriteLine("Please enter your age");
-            var canParse = int.TryParse(Console.ReadLine() )
+            var canParse = int.TryParse(Console.ReadLine(), out int age);
         }
 
         //Heatin Up Section:
@@ -78,7 +79,7 @@
 
 
         //Call the methods to test them in the Main method below
-        static void Main(string[] args)
+       
         {
             
         }
